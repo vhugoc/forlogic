@@ -1,0 +1,7 @@
+{
+    "database_auth": {
+      "uri"     : "forlogic-cluster-yhpvk.gcp.mongodb.net",
+      "user"    : "admin",
+      "password": "forlogicadmin"
+    }
+  }
