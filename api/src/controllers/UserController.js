@@ -38,10 +38,10 @@ class UserController {
             const user = await User.findOne({ email });
 
             if (!user)
-                return response.status(200).json({ success: false, message: "User does not exists" });
+                return response.status(400).json({ success: false, message: "User does not exists" });
             
             if (!bcrypt.compareSync(password, user.password))
-                return response.status(200).json({ success: false, message: "Invalid password" });
+                return response.status(400).json({ success: false, message: "Invalid password" });
 
             const token = jwt.sign({ id: user._id }, secret, {
                 expiresIn: 86400 * 7
@@ -74,7 +74,7 @@ class UserController {
             });
             
             if (user)
-                return response.status(200).json({ success: false, message: "User already exists" });
+                return response.status(400).json({ success: false, message: "User already exists" });
 
             const register = await User.create({
                 name,
