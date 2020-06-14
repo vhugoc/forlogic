@@ -15,15 +15,17 @@
   </a>
   
 ## Descrição
+
 API está finalizada, com todas as funcionalidades completas e o front-end conta com apenas a autenticação e registro dos usuários e CRUDE dos clientes.
+
 
 ## Tecnologias
 
 O projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Node.js][nodejs]
-- [React][reactjs]
-- [MongoDB][mongodb]
+- [Node.js](https://nodejs.org/)
+- [React](https://reactjs.org/)
+- [MongoDB](https://www.mongodb.com/)
 
 
 ### Instalação da API 
